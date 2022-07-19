@@ -185,6 +185,9 @@ Banner section style end
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
+.blogs p{
+  margin-right: 3rem;
+}
 .tablet-btn {
   text-align: center;
   display: none;
@@ -216,7 +219,7 @@ footer ul {
   margin-left: 1rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+ @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .container {
     width: 90%;
   }
@@ -228,7 +231,7 @@ footer ul {
   }
   .banner img {
     object-fit: contain;
-    /* margin-top: 10rem; */
+    
   }
 
   .main-article {
@@ -264,8 +267,8 @@ footer ul {
     line-height: 1;
   }
   
-}
-@media screen and (max-width: 767px) {
+} 
+@media screen and (max-width: 767.98px) {
   .container {
     width: 95%;
   }
@@ -282,6 +285,7 @@ footer ul {
     flex-direction: column;
   }
   .blogs {
+    width: 100%;
     grid-template-columns: 1fr;
   }
   .side-bar {
@@ -297,5 +301,5 @@ footer ul {
   .banner__description{
     padding: 3rem;
   }
-  
+ 
 }
