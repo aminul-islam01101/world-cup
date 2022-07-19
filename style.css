@@ -36,9 +36,9 @@ html {
   
   img,
   iframe {
-    max-width: 100%;
+    width: 100%;
     display: block;
-    object-position: right;
+    /* object-position: right; */
     object-fit: cover;
   }
   
@@ -53,7 +53,7 @@ html {
   }
   
   h1 {
-    font-size: 6.5rem;
+    font-size: 7rem;
   }
   
   h2 {
@@ -83,9 +83,9 @@ html {
   
   /*------------utility classes section start------------------  */
   .container {
-    max-width: 120rem;
+    max-width: 132rem;
     margin: 0 auto;
-    width: 80%;
+    width: 82.6%;
   }
   
   .container-short {
@@ -99,9 +99,6 @@ html {
     width: 90%;
   }
   
-  section {
-    margin-bottom: 10rem;
-  }
   
   .split {
     display: flex;
@@ -139,22 +136,36 @@ html {
     padding: 1.5rem 5rem;
     cursor: pointer;
   }
-  
-  .section-intro {
-    width: 50%;
-    margin: 3rem auto;
-  }
-  
-  .inline-orange {
-    color: #f35021;
-  }
-  .background-image {
-    background-size: cover;
-    background-position: right;
-    background-blend-mode: overlay;
-  }
+
+ 
   /*--------------utility classes section end------------------ */
   
+/*=========================== 
+Banner section style start 
+================================*/
+
+
+.banner{
+  background-color: var(--color-body);
+  color: var(--color-font);
+}
+.banner__description{
+  flex-basis: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================== 
+Banner section style end 
+================================*/
+
 
 
   /*----------------- Footer section styles start------------*/
