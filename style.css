@@ -205,6 +205,14 @@ Banner section style end
   }
 
 @media screen and (max-width:576px) {
-  
+  .banner{
+    flex-direction: column;
+  }
+  .main-article{
+    flex-direction: column;
+  }
+  .blogs{
+    grid-template-columns: 1fr;
+  }
   
 }
