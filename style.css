@@ -177,7 +177,17 @@ Banner section style start
 /*=========================== 
 Banner section style end 
 ================================*/
-
+.main-article{
+  align-items: flex-start;
+}
+.side-bar{
+  background-color: var(--color-body);
+  flex-direction: column;
+  text-align: center;
+  gap:1rem;
+  width: 312px;
+  padding: 1.5rem;
+}
 
 .blogs{
   display: grid;
@@ -190,6 +200,7 @@ Banner section style end
   /*----------------- Footer section styles start------------*/
   
   footer {
+    flex-direction: column;
     text-align: center;
     padding: 3rem 0 0 0;
     background-color: #0b0d17;
