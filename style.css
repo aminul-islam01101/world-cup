@@ -79,6 +79,9 @@ html {
   a {
     text-decoration: none;
   }
+  ul{
+    padding: 0;margin: 0;list-style: none;
+  }
   /*-------------------- general styles section end------------- */
   
   /*------------utility classes section start------------------  */
@@ -187,11 +190,13 @@ Banner section style end
   gap:1rem;
   width: 312px;
   padding: 1.5rem;
+  display: flex;
 }
 
 .blogs{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 .tablet-btn{
   text-align: center;
@@ -214,10 +219,14 @@ Banner section style end
   #copyright {
     font-size: 1.5rem;
   }
+  .social-link ul{
+    justify-content: center;
+  }
 
-@media screen and (max-width:576px) {
+/* @media screen and (max-width:576px) {
   .banner{
     flex-direction: column;
+    text-align: center;
   }
   .main-article{
     flex-direction: column;
@@ -225,5 +234,45 @@ Banner section style end
   .blogs{
     grid-template-columns: 1fr;
   }
-  
+  .side-bar{align-items: center;
+    flex-direction: column;
+  background-color: #fff;}
+  img{
+    width: 100%;
+}
+} */
+
+@media screen and (max-width:768px) and (max-width:768px) {
+  .container{
+    width: 95%;
+  }
+  img{
+    width: 100%;
+}
+
+  .main-article{
+    flex-direction: column;
+  }
+  .blogs{
+    grid-template-columns: repeat(2, 1fr) ;
+  }
+  .side-bar{
+    flex-direction: row;
+    
+    
+    
+  background-color: #fff;
+}
+.tablet-btn{
+  display: flex;
+  justify-content: center;
+ 
+
+}
+.footer-nav ul{
+  flex-wrap: wrap;
+}
+h1{
+  font-size: 4rem;
+}
 }
