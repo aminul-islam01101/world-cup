@@ -183,7 +183,10 @@ Banner section style end
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
+.tablet-btn{
+  text-align: center;
+  display: none;
+}
   /*----------------- Footer section styles start------------*/
   
   footer {
@@ -192,138 +195,16 @@ Banner section style end
     background-color: #0b0d17;
     color: #d9dbe1;
   }
-  footer h3 {
-    color: #ff5959;
+  footer h2 {
+ color: var(--color-font);
     font-size: 3.6rem;
     font-family: "lobster";
   }
   #copyright {
     font-size: 1.5rem;
   }
-  /*============= Footer section styles end================*/
+
+@media screen and (max-width:576px) {
   
-  /* .header-image {
-    width: 6em;
-    background-color: rgba(178, 176, 176, 0.361);
-    padding: 0.4em 1em;
-    border-radius: 1.8em 0 1.8em 0;
-    transition: transform 0.5s ease-in-out;
-  }
-  .header-image:hover {
-    transform: scale(0.75);
-  }
   
-  nav {
-    flex-basis: 70%;
-    align-items: center;
-  }
-  nav ul {
-    list-style-type: none;
-    gap: 0.3em;
-  
-    padding: 0;
-  }
-  
-  header {
-    background-color: rgba(0, 0, 0, 0.7);
-    align-items: center;
-    border-radius: 1.8em 0 2em 0;
-    position: fixed;
-    top: 0;
-    width: 80%;
-    max-width: 120rem;
-    margin: 0 auto;
-    font-size: 1.6rem;
-  }
-  
-  li a {
-    color: #ffffff;
-  
-    padding: 0.4em 1em;
-    border-radius: 0.8em 0 0.8em 0;
-    background-color: rgba(178, 176, 176, 0.361);
-  
-    white-space: nowrap;
-  }
-  li a:hover,
-  li a:focus {
-    background-color: rgba(255, 255, 255, 0.79);
-    color: rgb(0, 0, 0);
-  }
-  
-  nav > ul > li:hover > ul {
-    display: block;
-  }
-  .drop-down,
-  .side-drop {
-    display: none;
-    position: absolute;
-  }
-  .drop-down li {
-    margin-top: 1em;
-  }
-  
-  .drop-down > li:hover > ul {
-    display: block;
-    position: absolute;
-  
-    left: 105px;
-    top: 58px;
-  }
-  nav a {
-    display: inline-block;
-  }
-  
-  nav a::after {
-    content: "";
-    display: block;
-    
-    border-bottom: solid 3px #3d3b3b;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-  }
-  .active::after {
-    transform: scaleX(1);
-  }
-  
-  .active:hover::after {
-    transform: scaleX(0);
-  }
-  nav a:hover::after {
-    transform: scaleX(1);
-  }
-  
-  input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
-  form {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    background: rgba(178, 176, 176, 0.361);
-    white-space: nowrap;
-    padding: 0.4em 1em;
-    border-radius: 0.8em 0 0.8em 0;
-    font-size: 1.8rem;
-    width: 50%;
-  }
-  input::placeholder {
-    color: #d9dbe1;
-  
-    font-size: 1.6rem;
-  }
-  .fa-magnifying-glass {
-    display: inline-block;
-    margin: 0.3em 1em 0 0;
-    cursor: pointer;
-  }
-  .fa-circle-user {
-    color: #f35021;
-    font-size: 2.5rem;
-    padding: 0.4em;
-    cursor: pointer;
-  }
-  .search {
-    justify-content: end;
-  }
-   */
+}
