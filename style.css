@@ -23,7 +23,7 @@ html {
    
     line-height: 1.5;
     margin: 0;
-    padding: 0;
+    padding:3rem 0 0 0;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
   }
 
@@ -36,7 +36,7 @@ html {
   
   img,
   iframe {
-    width: 100%;
+    max-width: 100%;
     display: block;
     /* object-position: right; */
     object-fit: cover;
@@ -148,12 +148,24 @@ Banner section style start
 .banner{
   background-color: var(--color-body);
   color: var(--color-font);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  margin: 0;
+  justify-content: center;
 }
 .banner__description{
   flex-basis: 50%;
 }
+.banner__image{
+  display: flex;
+  /* justify-content: center; */
+  flex-basis: 50%;
+}
 
 
+.banner__image img{
+  /* flex-basis: 50%; */
+}
 
 
 
