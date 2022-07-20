@@ -25,18 +25,16 @@ body {
 p {
   margin-top: 0;
   font-size: 1.6rem;
-
 }
 
-img{
+img {
   width: 100%;
-  display: block;  
+  display: block;
 }
 
 figure {
   margin: 0;
 }
-
 
 h1 {
   font-size: 7rem;
@@ -45,7 +43,6 @@ h1 {
   margin-bottom: 3rem;
   line-height: 1;
 }
-
 
 a {
   text-decoration: none;
@@ -65,7 +62,6 @@ ul {
   width: 82.6%;
 }
 
-
 .split {
   display: flex;
   gap: 2rem;
@@ -77,8 +73,7 @@ ul {
   justify-content: center;
 }
 
-
-.split-column{
+.split-column {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,39 +82,29 @@ ul {
 
 .btn {
   font-weight: 700;
- 
+
   border: none;
   padding: 1.5rem 3rem;
   font-size: 1.8rem;
   display: inline-block;
   white-space: nowrap;
   border-radius: var(--border-radius);
-  /* border-radius: 0.8em 0 0.8em 0;
-  background: linear-gradient(to right, #f35021 50%, rgb(2, 2, 2) 50%);
-  background-size: 201% 100%;
-  background-position: right;
-  transition: all 0.5s ease-out; */
+  border: 1px solid rgba(221, 221, 221, 0.445);
+  
 }
-/* .btn:hover {
-  background-position: left;
-  color: rgb(236, 233, 233)
-} */
 
-.btn--primary{
-  background-color: #f35021;
+.btn--primary {
+  background-color: #237379;
   color: var(--color-font);
- 
 }
-.btn--secondary{
-  background-color:var(--color-font);
-  color:var(--color-body);
+.btn--secondary {
+  background-color: var(--color-font);
+  color: var(--color-body);
   border: 1px solid #ddd;
 }
 
-.btn--block {
-  display: block;
-}
-section{
+
+section {
   margin-bottom: 10rem;
 }
 
@@ -134,53 +119,41 @@ Banner section style start
   color: var(--color-font);
   border-radius: 3rem;
 
- 
   align-items: center;
   font-size: 1.6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
 }
 .banner__details {
-  
- margin:11rem 2.4rem 11rem 10.6rem  ;
-  
+  margin: 11rem 2.4rem 11rem 10.6rem;
 }
-.banner__description{
+.banner__description {
   margin-bottom: 2rem;
 }
 .banner__image {
- margin: 3.3rem 8rem 0 0;
+  margin: 3.3rem 8rem 0 0;
 }
 
 .fa-arrow-right-long {
-  transition: transform .3s linear;
+  transition: transform 0.3s linear;
 }
 
 .banner__btn:hover .fa-arrow-right-long {
-  
-transform: translateX(15px);
+  transform: translateX(15px);
 }
-
 
 /*=========================== 
 Banner section style end 
 ================================*/
 
-
 /*===================================            Blog section Start
 ============================== */
-
-
-
-
 
 .main-article {
   align-items: flex-start;
   display: grid;
   gap: 2.4rem;
-  grid-template-columns:312px auto;
-
+  grid-template-columns: 312px auto;
 }
 .side-bar {
   background-color: var(--color-body);
@@ -195,46 +168,99 @@ Banner section style end
 .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3.5rem;
+  gap: 2.4rem;
 }
-.card{
-display: flex;
-flex-direction: column;
-border: 1px solid #E8E8E8;
-border-radius: 10px;
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
 }
 
-.card__btn{
-  padding: .5rem 1.5rem;
+.card__btn {
+  padding: 0.5rem 1.5rem;
   border: 1px solid var(--color-body);
+  
+}
+/* .blog{
+  background: linear-gradient(to right, #cf1313 50%, #ffffff 50%,);
+  background-size: 201% 100%;
+  background-position: right;
+  transition: all 0.4s ease-out;
+} */
+
+.blog__btn{
+background: linear-gradient(to right, #ffffff 50%, #237379 50%);
+
+}
+.match__btn{
+background: linear-gradient(to right, #31c00d 50%, #ffffff 50%);
+
+}
+.group__btn {
+  background: linear-gradient(to right, #c00d0d 50%, #fff 50%);
+}
+.blog__btn:hover{
+  background-position: left;
+  color: #f32c2c;
+}
+.match__btn:hover{
+  background-position: left;
+  color: var(--color-font)
+}
+.group__btn:hover {
+  background-position: left;
+  color: #fff ;
 }
 
-.card__details{
+
+
+
+.sidebar__btn{
+  background-size: 200% 100%;
+background-position: right;
+transition: all 0.4s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+.card__details {
   padding: 1.5rem;
 }
-.card__feature{
+.card__feature {
   font-size: 1.6rem;
   margin: 1.5rem 0 2rem 0;
   font-weight: 600;
 }
-.card__info{
-  color:rgb(107, 101, 101)
+.card__info {
+  color: rgb(107, 101, 101);
 }
-
-
 
 .tablet-btn {
-  text-align: center;
   display: none;
 }
-.card__flag{
+.card__flag {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   align-items: center;
+  padding: 1.5rem;
+
 }
-.card__flag p{
-  margin: 0;
+
+.card__flag>figure{
+  width: 45%;
 }
+.card h3{
+  font-size: 2rem;
+}
+
 
 /*===================================            Blog section end
 ============================== */
@@ -244,7 +270,7 @@ border-radius: 10px;
 footer {
   flex-direction: column;
   text-align: center;
-  
+
   background-color: var(--color-body);
   font-size: 1.6rem;
   color: #d9dbe1;
@@ -254,10 +280,8 @@ footer h2 {
   font-size: 6rem;
   font-weight: 600;
   margin-bottom: 3rem;
-
-  
 }
-hr{
+hr {
   border: 1px solid rgba(219, 212, 212, 0.1);
 }
 #copyright {
@@ -271,83 +295,72 @@ footer ul {
 .footer-nav ul li {
   margin-left: 1rem;
 }
-footer a{
-  color:#b9b9b9 ;
- }
+footer a {
+  color: #b9b9b9;
+}
+footer a:hover{
+color: var(--color-font);
+}
 
- /*===================================            Footer section start
+/*===================================            Footer section end
 ============================== */
 
+/*===================================            Media Query start 
+============================== */
 
+/*For Desktop browsers  */
 
-@media screen and (min-width: 992px) and (max-width: 1360px) {
- 
-  h1{
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  h1 {
     font-size: 5.5rem;
     margin-bottom: 2rem;
   }
-  
+
   .banner__details {
-    
-   margin:7rem 2.4rem 5rem 7rem  ;
-    
+    margin: 7rem 2.4rem 5rem 7rem;
   }
-  .banner__description{
-    
+  .banner__description {
     margin-bottom: 2rem;
   }
   .banner__image {
-   margin: 3.3rem 2rem 0 0;
+    margin: 3.3rem 2rem 0 0;
   }
-    
-  } 
+}
+/*For tablet browsers  */
 
- @media screen and (min-width: 576px) and (max-width: 991.98px) {
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
   .container {
     width: 90%;
   }
- 
-  h1{
+  section{
+    margin-bottom: 7rem;
+  }
+
+  h1 {
     font-size: 3.5rem;
     margin-bottom: 2rem;
-    line-height: .9;
+    line-height: 0.9;
   }
-  
+
   .banner__details {
-    
-    
-   margin:5rem 2.4rem 5rem 5rem  ;
-    
+    margin: 5rem 2.4rem 5rem 5rem;
   }
-  .banner__description{
+  .banner__description {
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
   }
   .banner__image {
-   margin: 3.3rem 1rem 0 0;
+    margin: 3.3rem 1rem 0 0;
   }
-  .banner__btn{
+  .banner__btn {
     padding: 1rem 1.8rem;
   }
 
-.tablet-hidden {display: none;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .tablet-hidden {
+    display: none;
+  }
 
   .main-article {
-    flex-direction: column;
     grid-template-columns: 1fr;
   }
   .blogs {
@@ -378,68 +391,49 @@ footer a{
     margin-left: 2rem;
     margin-right: 2rem;
   }
-
-  
-} 
+}
+/*For mobile and small screens browsers  */
 
 @media screen and (max-width: 575.98px) {
   .container {
     width: 95%;
   }
-  h1{
+  section{
+    margin-bottom: 2.4rem;
+  }
+  h1 {
     font-size: 3.5rem;
     margin-bottom: 3.5rem;
-    line-height: .9;
+    line-height: 0.9;
   }
-  
+.banner{
+  border-radius: 15px;
+}
   .banner__details {
-    
-    
-   margin:5rem 0 5rem 0  ;
-    
+    margin: 5rem 0 5rem 0;
   }
-  .banner__description{
+  .banner__description {
     font-size: 1.4rem;
     margin-bottom: 2.5rem;
-   
-   
   }
-  
+
   .banner__image {
-   margin: 0 auto ;
-  
+    margin: 0 auto;
   }
-  .banner__btn{
+  .banner__btn {
     padding: 1rem 1.8rem;
   }
 
-
-
-
   .banner {
-   
-  padding: 5rem 5rem 0 5rem;
-  text-align: center;
-   
-    
-    
-    grid-template-columns:1fr;
-    
+    padding: 5rem 5rem 0 5rem;
+    text-align: center;
+
+    grid-template-columns: 1fr;
   }
-
-
-
-
-
-
-
-
 
   .main-article {
     flex-direction: column;
     grid-template-columns: 1fr;
- 
-    
   }
   .blogs {
     width: 100%;
@@ -447,27 +441,12 @@ footer a{
   }
   .side-bar {
     width: 100%;
-    flex-direction: column;
+   
     align-items: center;
     background-color: #fff;
   }
 
-  .footer-nav ul {
+.footer-nav ul {
     flex-direction: column;
   }
-  
 }
- 
-
-
-
-
-
-
-
-
-
-
- 
- 
-  

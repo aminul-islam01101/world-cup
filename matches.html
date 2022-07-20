@@ -19,20 +19,48 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .btn {
+        color: black;
+      }
+      .banner__btn {
+        background-color: #31c00d;
+      }
+
+      .blog__btn {
+        background: linear-gradient(to right, #237379 50%, #fff 50%);
+      }
+      .match__btn {
+        background: linear-gradient(to right, #fff 50%, #31c00d 50%);
+      }
+      .blog__btn:hover {
+        background-position: left;
+        color: #fff;
+      }
+      .match__btn:hover {
+        background-position: left;
+        color: #31c00d;
+      }
+      .sidebar__btn {
+        background-size: 201% 100%;
+        background-position: right;
+        transition: all 0.4s ease-out;
+      }
+    </style>
   </head>
 
   <body>
     <section>
       <div class="container">
-        <div class="banner split">
-          <div class="banner__description">
+        <div class="banner">
+          <div class="banner__details">
             <h1>The Greatest show on the earth</h1>
-            <p>
+            <p class="banner__description">
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
               making it over 2000 years old.
             </p>
-            <a href="" class="btn"
+            <a href="#" class="banner__btn btn btn--primary"
               >Watch Live <i class="fa-solid fa-arrow-right-long"></i
             ></a>
           </div>
@@ -43,108 +71,108 @@
       </div>
     </section>
 
-    <section class="main-article container ">
+    <section class="main-article container">
       <aside class="side-bar">
-        <a href="" class="btn">Upcoming match</a>
-        <a href="" class="btn">All Group</a>
-        <a href="" class="btn">Blog</a>
+        <a
+          href="#"
+          class="sidebar__btn btn btn--secondary match__btn"
+          target="_blank"
+          >Upcoming match</a
+        >
+        <a
+          href="./groups.html"
+          class="sidebar__btn btn btn--secondary group__btn"
+          target="_blank"
+          >All Group</a
+        >
+        <a href="./index.html" class="sidebar__btn blog__btn btn btn--primary">Blog</a>
       </aside>
+
       <main>
         <section class="blogs">
           <div class="card split-column">
-            <div class="card__flag ">
+            <div class="card__flag">
               <figure>
-                <img src="./assets/germany Flag.png" alt="">
+                <img src="./assets/germany Flag.png" alt="" />
               </figure>
               <h3>VS</h3>
               <figure>
-                <img src="./assets/Flag.png" alt="">
+                <img src="./assets/Flag.png" alt="" />
               </figure>
             </div>
-            <h4>Germany vs France</h4>
+            <h3>Germany vs France</h3>
             <p>April 01, 2023, 1.00 AM</p>
-           
           </div>
           <div class="card split-column">
-            <div class="card__flag ">
+            <div class="card__flag">
               <figure>
-                <img src="./assets/germany Flag.png" alt="">
+                <img src="./assets/germany Flag.png" alt="" />
               </figure>
               <h3>VS</h3>
               <figure>
-                <img src="./assets/Flag.png" alt="">
+                <img src="./assets/Flag.png" alt="" />
               </figure>
             </div>
-            <h4>Germany vs France</h4>
+            <h3>Germany vs France</h3>
             <p>April 01, 2023, 1.00 AM</p>
-           
           </div>
           <div class="card split-column">
-            <div class="card__flag ">
+            <div class="card__flag">
               <figure>
-                <img src="./assets/germany Flag.png" alt="">
+                <img src="./assets/germany Flag.png" alt="" />
               </figure>
               <h3>VS</h3>
               <figure>
-                <img src="./assets/Flag.png" alt="">
+                <img src="./assets/Flag.png" alt="" />
               </figure>
             </div>
-            <h4>Germany vs France</h4>
+            <h3>Germany vs France</h3>
             <p>April 01, 2023, 1.00 AM</p>
-           
           </div>
           <div class="card split-column">
-            <div class="card__flag ">
+            <div class="card__flag">
               <figure>
-                <img src="./assets/germany Flag.png" alt="">
+                <img src="./assets/germany Flag.png" alt="" />
               </figure>
               <h3>VS</h3>
               <figure>
-                <img src="./assets/Flag.png" alt="">
+                <img src="./assets/Flag.png" alt="" />
               </figure>
             </div>
-            <h4>Germany vs France</h4>
+            <h3>Germany vs France</h3>
             <p>April 01, 2023, 1.00 AM</p>
-           
           </div>
           <div class="card split-column">
-            <div class="card__flag ">
+            <div class="card__flag">
               <figure>
-                <img src="./assets/germany Flag.png" alt="">
+                <img src="./assets/germany Flag.png" alt="" />
               </figure>
               <h3>VS</h3>
               <figure>
-                <img src="./assets/Flag.png" alt="">
+                <img src="./assets/Flag.png" alt="" />
               </figure>
             </div>
-            <h4>Germany vs France</h4>
+            <h3>Germany vs France</h3>
             <p>April 01, 2023, 1.00 AM</p>
-           
           </div>
           <div class="card split-column">
-            <div class="card__flag ">
+            <div class="card__flag">
               <figure>
-                <img src="./assets/germany Flag.png" alt="">
+                <img src="./assets/germany Flag.png" alt="" />
               </figure>
               <h3>VS</h3>
               <figure>
-                <img src="./assets/Flag.png" alt="">
+                <img src="./assets/Flag.png" alt="" />
               </figure>
             </div>
-            <h4>Germany vs France</h4>
+            <h3>Germany vs France</h3>
             <p>April 01, 2023, 1.00 AM</p>
-           
           </div>
-      
         </section>
       </main>
     </section>
 
-
-
-    <div class="container tablet-btn ">
-      <a href="#" class="btn">View all</a>
-    </div>
+    <a href="#" class="btn tablet-btn btn--primary">View all</a>
 
     <footer class="split">
       <div class="container">
@@ -152,23 +180,29 @@
         <hr />
         <nav class="footer-nav">
           <ul class="split">
-            <li><a href="#"></a>Contact Us</li>
-            <li><a href="#"></a>Terms of Service</li>
-            <li><a href="#"></a>Privacy Policy</li>
-            <li><a href="#"></a>Privacy Settings</li>
-            <li><a href="#"></a>Goal App</li>
-            <li><a href="#"></a>Goal Live</li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Privacy Settings</a></li>
+            <li><a href="#">Goal App</a></li>
+            <li><a href="#">Goal Live</a></li>
           </ul>
         </nav>
 
         <nav class="social-link">
           <ul class="split">
             <li>
-              <a href="#"></a><i class="fa-brands fa-facebook-square"></i>
+              <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
             </li>
-            <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
-            <li><a href="#"></a><i class="fa-brands fa-linkedin"></i></li>
-            <li><a href="#"></a><i class="fa-brands fa-linkedin"></i></li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
           </ul>
         </nav>
       </div>
