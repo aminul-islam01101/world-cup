@@ -90,7 +90,6 @@ ul {
   white-space: nowrap;
   border-radius: var(--border-radius);
   border: 1px solid rgba(221, 221, 221, 0.445);
-  
 }
 
 .btn--primary {
@@ -102,7 +101,6 @@ ul {
   color: var(--color-body);
   border: 1px solid #ddd;
 }
-
 
 section {
   margin-bottom: 10rem;
@@ -146,7 +144,8 @@ Banner section style start
 Banner section style end 
 ================================*/
 
-/*===================================            Blog section Start
+/*=================================== 
+      Blog section Start           
 ============================== */
 
 .main-article {
@@ -180,7 +179,6 @@ Banner section style end
 .card__btn {
   padding: 0.5rem 1.5rem;
   border: 1px solid var(--color-body);
-  
 }
 /* .blog{
   background: linear-gradient(to right, #cf1313 50%, #ffffff 50%,);
@@ -189,47 +187,33 @@ Banner section style end
   transition: all 0.4s ease-out;
 } */
 
-.blog__btn{
-background: linear-gradient(to right, #ffffff 50%, #237379 50%);
-
+.blog__btn {
+  background: linear-gradient(to right, #ffffff 50%, #237379 50%);
 }
-.match__btn{
-background: linear-gradient(to right, #31c00d 50%, #ffffff 50%);
-
+.match__btn {
+  background: linear-gradient(to right, #31c00d 50%, #ffffff 50%);
 }
 .group__btn {
   background: linear-gradient(to right, #c00d0d 50%, #fff 50%);
 }
-.blog__btn:hover{
+.blog__btn:hover {
   background-position: left;
   color: #f32c2c;
 }
-.match__btn:hover{
+.match__btn:hover {
   background-position: left;
-  color: var(--color-font)
+  color: var(--color-font);
 }
 .group__btn:hover {
   background-position: left;
-  color: #fff ;
+  color: #fff;
 }
 
-
-
-
-.sidebar__btn{
+.sidebar__btn {
   background-size: 200% 100%;
-background-position: right;
-transition: all 0.4s ease-out;
+  background-position: right;
+  transition: all 0.4s ease-out;
 }
-
-
-
-
-
-
-
-
-
 
 .card__details {
   padding: 1.5rem;
@@ -251,21 +235,21 @@ transition: all 0.4s ease-out;
   gap: 1rem;
   align-items: center;
   padding: 1.5rem;
-
 }
 
-.card__flag>figure{
+.card__flag > figure {
   width: 45%;
 }
-.card h3{
+.card h3 {
   font-size: 2rem;
 }
 
-
-/*===================================            Blog section end
+/*=================================== 
+Blog section end           
 ============================== */
 
-/*===================================            Footer section start
+/*===================================  
+ Footer section start         
 ============================== */
 footer {
   flex-direction: column;
@@ -298,14 +282,16 @@ footer ul {
 footer a {
   color: #b9b9b9;
 }
-footer a:hover{
-color: var(--color-font);
+footer a:hover {
+  color: var(--color-font);
 }
 
-/*===================================            Footer section end
+/*=================================== 
+Footer section end           
 ============================== */
 
-/*===================================            Media Query start 
+/*===================================  
+Media Query start           
 ============================== */
 
 /*For Desktop browsers  */
@@ -332,7 +318,7 @@ color: var(--color-font);
   .container {
     width: 90%;
   }
-  section{
+  section {
     margin-bottom: 7rem;
   }
 
@@ -398,7 +384,7 @@ color: var(--color-font);
   .container {
     width: 95%;
   }
-  section{
+  section {
     margin-bottom: 2.4rem;
   }
   h1 {
@@ -406,9 +392,9 @@ color: var(--color-font);
     margin-bottom: 3.5rem;
     line-height: 0.9;
   }
-.banner{
-  border-radius: 15px;
-}
+  .banner {
+    border-radius: 15px;
+  }
   .banner__details {
     margin: 5rem 0 5rem 0;
   }
@@ -441,12 +427,12 @@ color: var(--color-font);
   }
   .side-bar {
     width: 100%;
-   
+
     align-items: center;
     background-color: #fff;
   }
 
-.footer-nav ul {
+  .footer-nav ul {
     flex-direction: column;
   }
 }
