@@ -32,8 +32,8 @@ img,
 iframe {
   width: 100%;
   display: block;
-  /* object-position: center left; */
-  object-fit: cover;
+  /* object-fit: cover; */
+  
 }
 
 figure {
@@ -47,7 +47,7 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   line-height: 0.9;
 }
 
@@ -67,7 +67,7 @@ h3 {
 h4 {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #fafafa;
+  
   margin: 0;
 }
 
@@ -79,6 +79,7 @@ ul {
   margin: 0;
   list-style: none;
 }
+
 /*-------------------- general styles section end------------- */
 
 /*------------utility classes section start------------------  */
@@ -103,12 +104,24 @@ ul {
   display: flex;
   gap: 1rem;
 }
+.split-center {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
 
 .split-between {
   display: flex;
   /* gap: 5rem; */
   justify-content: space-between;
   /* flex-wrap: wrap; */
+}
+.split-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .btn {
@@ -120,13 +133,14 @@ ul {
   display: inline-block;
   white-space: nowrap;
   border-radius: 0.8em 0 0.8em 0;
-  background: linear-gradient(to right, #f35021 50%, rgb(116, 111, 111) 50%);
+  background: linear-gradient(to right, #f35021 50%, rgb(2, 2, 2) 50%);
   background-size: 201% 100%;
   background-position: right;
   transition: all 0.5s ease-out;
 }
 .btn:hover {
   background-position: left;
+  color: rgb(236, 233, 233)
 }
 
 .btn-primary {
@@ -150,25 +164,29 @@ Banner section style start
   border-radius: 1.5rem;
 
   margin: 0;
-  justify-content: center;
+ align-items: center;
   font-size: 1.6rem;
 }
 .banner__description {
   flex-basis: 50%;
+ 
   padding: 5rem 0 5rem 7rem;
 }
 .banner__image {
-  /* display: flex; */
-  /* justify-content: center; */
+ 
   flex-basis: 50%;
-  align-self: flex-end;
+ 
 }
+
 
 /*=========================== 
 Banner section style end 
 ================================*/
 .main-article {
   align-items: flex-start;
+  display: grid;
+  grid-template-columns:312px auto;
+
 }
 .side-bar {
   background-color: var(--color-body);
@@ -183,15 +201,24 @@ Banner section style end
 .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 3.5rem;
 }
-.blogs p{
+/* .blogs p{
   margin-right: 3rem;
-}
+} */
 .tablet-btn {
   text-align: center;
   display: none;
 }
+.card__flag{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.card__flag p{
+  margin: 0;
+}
+
 /*----------------- Footer section styles start------------*/
 
 footer {
@@ -219,7 +246,7 @@ footer ul {
   margin-left: 1rem;
 }
 
- @media screen and (min-width: 768px) and (max-width: 991.98px) {
+ @media screen and (min-width: 576px) and (max-width: 991.98px) {
   .container {
     width: 90%;
   }
@@ -229,13 +256,9 @@ footer ul {
   .banner p {
     font-size: 1.4rem;
   }
-  .banner img {
-    object-fit: contain;
-    
-  }
-
   .main-article {
     flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .blogs {
     grid-template-columns: repeat(2, 1fr);
@@ -268,7 +291,7 @@ footer ul {
   }
   
 } 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 575.98px) {
   .container {
     width: 95%;
   }
@@ -277,12 +300,15 @@ footer ul {
     flex-direction: column;
     text-align: center;
   }
-  .banner__image{
+  /* .banner__image{
     align-self: center;
-  }
+  } */
 
   .main-article {
     flex-direction: column;
+    grid-template-columns: 1fr;
+ 
+    
   }
   .blogs {
     width: 100%;
@@ -300,6 +326,12 @@ footer ul {
   }
   .banner__description{
     padding: 3rem;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .banner p {
+    font-size: 1.4rem;
   }
  
 }
