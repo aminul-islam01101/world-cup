@@ -168,12 +168,11 @@ Banner section style end
 ================================*/
 
 
-/*===================================            Bog section Start
+/*===================================            Blog section Start
 ============================== */
 
 
-/*===================================            Bog section end
-============================== */
+
 
 
 .main-article {
@@ -193,13 +192,18 @@ Banner section style end
   display: flex;
   border-radius: var(--border-radius);
 }
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem;
+}
 .card{
 display: flex;
 flex-direction: column;
+border: 1px solid #E8E8E8;
+border-radius: 10px;
 }
-.card__image img{
-  border-radius: var(--border-radius);
-}
+
 .card__btn{
   padding: .5rem 1.5rem;
   border: 1px solid var(--color-body);
@@ -213,15 +217,12 @@ flex-direction: column;
   margin: 1.5rem 0 2rem 0;
   font-weight: 600;
 }
-
-.blogs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3.5rem;
+.card__info{
+  color:rgb(107, 101, 101)
 }
-/* .blogs p{
-  margin-right: 3rem;
-} */
+
+
+
 .tablet-btn {
   text-align: center;
   display: none;
@@ -235,20 +236,29 @@ flex-direction: column;
   margin: 0;
 }
 
-/*----------------- Footer section styles start------------*/
+/*===================================            Blog section end
+============================== */
 
+/*===================================            Footer section start
+============================== */
 footer {
   flex-direction: column;
   text-align: center;
-  /* padding: 3rem 0 0 0; */
-  background-color: #0b0d17;
+  
+  background-color: var(--color-body);
   font-size: 1.6rem;
   color: #d9dbe1;
 }
 footer h2 {
   color: var(--color-font);
-  font-size: 3.6rem;
-  font-family: "lobster";
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+
+  
+}
+hr{
+  border: 1px solid rgba(219, 212, 212, 0.1);
 }
 #copyright {
   font-size: 1.5rem;
@@ -261,6 +271,14 @@ footer ul {
 .footer-nav ul li {
   margin-left: 1rem;
 }
+footer a{
+  color:#b9b9b9 ;
+ }
+
+ /*===================================            Footer section start
+============================== */
+
+
 
 @media screen and (min-width: 992px) and (max-width: 1360px) {
  
@@ -312,7 +330,7 @@ footer ul {
     padding: 1rem 1.8rem;
   }
 
-.tablet-hiden {display: none;}
+.tablet-hidden {display: none;}
 
 
 
@@ -348,16 +366,19 @@ footer ul {
 
   .tablet-btn {
     display: inline-block;
-    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 7rem;
   }
   .footer-nav ul {
     flex-wrap: wrap;
   }
-  .footer-nav ul li {
+  .footer-nav li {
     margin-left: 2rem;
     margin-right: 2rem;
   }
- 
+
   
 } 
 
