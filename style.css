@@ -42,6 +42,7 @@ h1 {
   line-height: 0.9;
   margin-top: 0;
   margin-bottom: 3rem;
+  line-height: 1;
 }
 
 
@@ -85,22 +86,23 @@ ul {
 
 .btn {
   font-weight: 700;
-  color: #f35021;
+ 
   border: none;
   padding: 1.5rem 3rem;
   font-size: 1.8rem;
   display: inline-block;
   white-space: nowrap;
-  border-radius: 0.8em 0 0.8em 0;
+  border-radius: var(--border-radius);
+  /* border-radius: 0.8em 0 0.8em 0;
   background: linear-gradient(to right, #f35021 50%, rgb(2, 2, 2) 50%);
   background-size: 201% 100%;
   background-position: right;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; */
 }
-.btn:hover {
+/* .btn:hover {
   background-position: left;
   color: rgb(236, 233, 233)
-}
+} */
 
 .btn-primary {
   margin-top: 2rem;
@@ -139,6 +141,19 @@ Banner section style start
 }
 .banner__image {
  margin: 3.3rem 8rem 0 0;
+}
+.banner__btn {
+  background-color: #f35021;
+  color: var(--color-font);
+ 
+}
+.fa-arrow-right-long {
+  transition: transform .3s linear;
+}
+
+.banner__btn:hover .fa-arrow-right-long {
+  
+transform: translateX(15px);
 }
 
 
