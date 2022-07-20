@@ -24,6 +24,7 @@ body {
 
 p {
   margin-top: 0;
+  font-size: 1.6rem;
 
 }
 
@@ -67,7 +68,7 @@ ul {
 
 .split {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 .split-center {
   display: flex;
@@ -104,13 +105,22 @@ ul {
   color: rgb(236, 233, 233)
 } */
 
-.btn-primary {
-  margin-top: 2rem;
-  padding: 1.5rem 5rem;
-  cursor: pointer;
+.btn--primary{
+  background-color: #f35021;
+  color: var(--color-font);
+ 
 }
+.btn--secondary{
+  background-color:var(--color-font);
+  color:var(--color-body);
+  border: 1px solid #ddd;
+}
+
 .btn--block {
   display: block;
+}
+section{
+  margin-bottom: 10rem;
 }
 
 /*--------------utility classes section end------------------ */
@@ -134,7 +144,7 @@ Banner section style start
 .banner__details {
   
  margin:11rem 2.4rem 11rem 10.6rem  ;
-  /* padding: 5rem 0 5rem 7rem; */
+  
 }
 .banner__description{
   margin-bottom: 2rem;
@@ -142,11 +152,7 @@ Banner section style start
 .banner__image {
  margin: 3.3rem 8rem 0 0;
 }
-.banner__btn {
-  background-color: #f35021;
-  color: var(--color-font);
- 
-}
+
 .fa-arrow-right-long {
   transition: transform .3s linear;
 }
@@ -160,9 +166,20 @@ transform: translateX(15px);
 /*=========================== 
 Banner section style end 
 ================================*/
+
+
+/*===================================            Bog section Start
+============================== */
+
+
+/*===================================            Bog section end
+============================== */
+
+
 .main-article {
   align-items: flex-start;
   display: grid;
+  gap: 2.4rem;
   grid-template-columns:312px auto;
 
 }
@@ -174,6 +191,27 @@ Banner section style end
   width: 312px;
   padding: 1.5rem;
   display: flex;
+  border-radius: var(--border-radius);
+}
+.card{
+display: flex;
+flex-direction: column;
+}
+.card__image img{
+  border-radius: var(--border-radius);
+}
+.card__btn{
+  padding: .5rem 1.5rem;
+  border: 1px solid var(--color-body);
+}
+
+.card__details{
+  padding: 1.5rem;
+}
+.card__feature{
+  font-size: 1.6rem;
+  margin: 1.5rem 0 2rem 0;
+  font-weight: 600;
 }
 
 .blogs {
@@ -202,7 +240,7 @@ Banner section style end
 footer {
   flex-direction: column;
   text-align: center;
-  padding: 3rem 0 0 0;
+  /* padding: 3rem 0 0 0; */
   background-color: #0b0d17;
   font-size: 1.6rem;
   color: #d9dbe1;
@@ -274,7 +312,7 @@ footer ul {
     padding: 1rem 1.8rem;
   }
 
-
+.tablet-hiden {display: none;}
 
 
 
@@ -309,8 +347,8 @@ footer ul {
   }
 
   .tablet-btn {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
   }
   .footer-nav ul {
     flex-wrap: wrap;
@@ -343,14 +381,7 @@ footer ul {
     font-size: 1.4rem;
     margin-bottom: 2.5rem;
    
-    width: 400px;
-    height: 50px;
-    margin: 0 auto;
- 
-
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+   
   }
   
   .banner__image {
