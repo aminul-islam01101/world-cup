@@ -16,10 +16,9 @@ html {
 
 body {
   color: var(--color-body);
-
   line-height: 1.5;
   margin: 0;
-  padding: 3rem 0 0 0;
+  padding: 5rem 0 0 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
@@ -28,48 +27,22 @@ p {
   font-size: 1.8rem;
 }
 
-img,
-iframe {
+img{
   width: 100%;
-  display: block;
-  /* object-fit: cover; */
-  
+  display: block;  
 }
 
 figure {
   margin: 0;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-}
 
 h1 {
-  font-size: 5rem;
+  font-size: 7rem;
   line-height: 0.9;
+  margin-top: 0;
 }
 
-h2 {
-  margin: 0 0 1.5rem 0;
-  color: #121212;
-  font-size: 4.5rem;
-}
-
-h3 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #121212;
-  margin: 1.8rem 0;
-}
-
-h4 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  
-  margin: 0;
-}
 
 a {
   text-decoration: none;
@@ -89,16 +62,6 @@ ul {
   width: 82.6%;
 }
 
-.container-short {
-  max-width: 100rem;
-  margin: 0 auto;
-  width: 70%;
-}
-.container-large {
-  max-width: 140rem;
-  margin: 0 auto;
-  width: 90%;
-}
 
 .split {
   display: flex;
@@ -111,12 +74,7 @@ ul {
   justify-content: center;
 }
 
-.split-between {
-  display: flex;
-  /* gap: 5rem; */
-  justify-content: space-between;
-  /* flex-wrap: wrap; */
-}
+
 .split-column{
   display: flex;
   flex-direction: column;
@@ -161,21 +119,25 @@ Banner section style start
 .banner {
   background-color: var(--color-body);
   color: var(--color-font);
-  border-radius: 1.5rem;
+  border-radius: 3rem;
 
   margin: 0;
- align-items: center;
+  /* align-items: center; */
   font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: 2.4rem; */
 }
-.banner__description {
-  flex-basis: 50%;
- 
-  padding: 5rem 0 5rem 7rem;
+.banner__details {
+  
+ margin:11rem 2.4rem 11rem 10.6rem  ;
+  /* padding: 5rem 0 5rem 7rem; */
+}
+.banner__description{
+  margin-bottom: 2rem;
 }
 .banner__image {
- 
-  flex-basis: 50%;
- 
+ margin: 3.3rem 8rem 0 0;
 }
 
 
@@ -289,6 +251,27 @@ footer ul {
     font-size: 4rem;
     line-height: 1;
   }
+  
+} 
+@media screen and (min-width: 992px) and (max-width: 1360px) {
+ 
+h1{
+  font-size: 5.5rem;
+  margin-bottom: 3rem;
+}
+
+.banner__details {
+  
+ margin:8rem 2.4rem 5rem 10.6rem  ;
+  /* padding: 5rem 0 5rem 7rem; */
+}
+.banner__description{
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.banner__image {
+ margin: 3.3rem 2rem 0 0;
+}
   
 } 
 @media screen and (max-width: 575.98px) {
